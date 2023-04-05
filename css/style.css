@@ -1,0 +1,268 @@
+/*Variabel CSS*/
+:root {
+	--primary-color: #eec802; /*Vàng*/
+	--primary-blur: rgb(238, 200, 2);
+	--black-color: #000000;
+	--black-blur: rgb(39, 39, 39);
+	--text-color: #7b7b7b;
+	--gray-color: #555;
+	--text-opacity : rgba(255,255,255,.4);
+	--color-new: #E9EBEE;
+}
+
+html {
+	font-size: 16px;
+}
+
+* {
+	padding: 0 !important;
+	margin: 0 !important;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+/*Custom Class*/
+
+
+
+/*Background*/
+.bg__cover {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.bg__contain {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.bg__black {
+	background-color: var(--black-color) !important;
+}
+
+.bg__black-blur {
+	background-color: var(--black-blur) !important;
+}
+
+.bg__primary {
+	background-color: var(--primary-color) !important;
+}
+
+.bg__new {
+	background-color: var(--color-new) !important;
+}
+
+.bg__gray {
+	background-color: var(--gray-color) !important;
+}
+/*End Background*/
+
+/*Text color*/
+.text__primary {
+	color: var(--primary-color) !important;
+}
+.text__color {
+	color: var(--text-color) !important;
+}
+
+.text__gray {
+	color: var(--gray-color) !important;
+}
+.text__secondary {
+	color: var(--primary-blur) !important;
+}
+
+.text__opacity {
+	color: var(--text-opacity) !important;
+}
+/*end text color*/
+/*Height*/
+.h-70 {
+	height: 70px;
+}
+.h-5 {
+	height: 5px !important;
+}
+
+/*End Height*/
+
+/*width*/
+.w-46 {
+	width: 46%;
+}
+
+.w-30 {
+	width: 30%;
+}
+
+.w-60 {
+	width: 60%;
+}
+.w-5 {
+	width: 5% !important;
+}
+
+.w-15 {
+	width: 15%;
+}
+
+/*End width*/
+
+/*Padding*/
+.px-6 {
+	padding-left: 6vw !important;
+	padding-right: 6vw !important;
+}
+
+
+/*End Padding*/
+
+
+/*List*/
+.list__style-square {
+	list-style: square !important;
+	list-style-position: inside !important;
+}
+/*end list*/
+/*Hover*/
+.border__bottom-hover:hover {
+	border-bottom: 2px solid #f1c20a;
+}
+.border__bottom-big {
+	border-bottom: 4px solid #f1c20a;
+}
+.text__white-hover:hover {
+	color: white !important;
+	cursor: pointer;
+}
+.text__black-hover:hover {
+	color: black !important;
+	cursor: pointer;
+}
+.hover__link-mobile:hover {
+	background-color: rgba(0,0,0,0.05) !important;
+	color: rgba(17,17,17,0.85) !important;
+}
+
+.button__hover:hover {
+	box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
+/*End hover*/
+
+/*Border*/
+.border__primary {
+	border: 1px solid var(--primary-color) !important;
+}
+.border__primary-left {
+	border-left: 3px solid var(--primary-color) !important;
+}
+.border__after::after {
+	content: "";
+	display: block;
+	left: 0;
+	bottom: 0;
+	height: 4px !important;
+	background-color: var(--primary-color) !important;
+	max-width: 100px !important;
+	position: absolute;
+	width: 100px;
+}
+
+.border__radius-red {
+	border-radius: 50%;
+	border: 4px solid red;
+}
+
+.border__after-center::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 4px;
+	background-color: var(--primary-color);
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+.border__gray {
+	border: 5px solid #636363;
+}
+
+.border__bottom-blur::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 10%;
+	height: 3px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+/*End Border*/
+
+/*Font size*/
+.fs-14 {
+	font-size: 14px !important;
+}
+.fs-18 {
+	font-size: 18px !important;
+}
+.fs-23 {
+	font-size: 23px !important;
+}
+
+.fs-1-3 {
+	font-size: 1.3em !important;
+}
+.fs-0-97 {
+	font-size: 0.97em !important;
+}
+.fs-1-25 {
+	font-size: 1.125em !important;
+}
+/*end font size*/
+
+/*Font weight*/
+.fw-700 {
+	font-weight: 700 !important;
+}
+/*end font weight*/
+
+/*button*/
+.ouline__none {
+	outline: none;
+	border: none;
+}
+/*end button*/
+
+
+/*flex*/
+.flex-1 {
+	flex: 1;
+}
+/*End Flex*/
+
+/*start Shadow*/
+
+/*End Shadow*/
+
+/*Scroll fixed header*/
+    .header__scroll{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+        background: white;
+        transition: all 1s linear;
+        box-shadow: 1px 6px 10px #d0d0d0;
+    }
